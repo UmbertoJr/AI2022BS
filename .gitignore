@@ -1,0 +1,26 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../:\code\AI2020BsC\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/AI2020BsC.iml
+/misc.xml
+/modules.xml
+/other.xml
+/inspectionProfiles/profiles_settings.xml
+/vcs.xml
+/.idea/AI2020BsC.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/other.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/results.csv
+/Complete_lecture 1.ipynb
+/Complete notebooks/
+/Lectures/.ipynb_checkpoints/
+/.ipynb_checkpoints/Student_lecture 1-checkpoint.ipynb
