@@ -87,6 +87,7 @@ class TSPSolver:
         plt.title(f"{self.problem_instance.name} solved with {self.name_method} solver, gap {self.gap}")
         ordered_points = self.problem_instance.points[self.solution]
         plt.plot(ordered_points[:, 1], ordered_points[:, 2], 'b-')
+        plt.plot(ordered_points[[0, -1], 1], ordered_points[[0, -1], 2], 'b-')
         plt.show()
 
     def check_if_solution_is_valid(self):
