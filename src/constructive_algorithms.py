@@ -11,7 +11,7 @@ else:
 def random_method(instance_):
     n = int(instance_.nPoints)
     solution = np.random.choice(np.arange(n), size=n, replace=False)
-    return np.concatenate([solution, [solution[0]]])
+    return solution
 
 
 def nearest_neighbor(instance_, starting_node=0):
@@ -25,7 +25,7 @@ def nearest_neighbor(instance_, starting_node=0):
                 tour.append(new_node)
                 node = new_node
                 break
-    tour.append(starting_node)
+    # tour.append(starting_node)
     return np.array(tour)
 
 
@@ -103,7 +103,7 @@ def multi_fragment_create_solution(start_sol, sol, n):
             if iteration > 300:
                 if len(sol_list) == n:
                     end = True
-    sol_list.append(n1)
+    # sol_list.append(n1)
     return sol_list
 
 
