@@ -1,6 +1,11 @@
+import os
+
 import numpy as np
 
-from src.utils import compute_length
+if "AI" in os.getcwd():
+    from src.utils import compute_length
+else:
+    from AI2021BS.src.utils import compute_length
 
 
 def swap2opt(tsp_sequence, i, j):
