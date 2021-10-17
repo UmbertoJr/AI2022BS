@@ -1,7 +1,12 @@
+import os
+
 import numpy as np
 from matplotlib import pyplot as plt
 
-from src.utils import distance_euc
+if "AI" in os.getcwd():
+    from src.utils import distance_euc
+else:
+    from AI2021BS.src.utils import distance_euc
 
 
 class ProblemInstance:
