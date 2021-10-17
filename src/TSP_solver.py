@@ -66,7 +66,7 @@ class TSPSolver:
         for i in range(1, len(self.algorithms)):
             improver = self.algorithms[i]
             self.solution = self.available_improvers[improver](self.solution, self.problem_instance)
-            if self.check_if_solution_is_valid():
+            if not self.check_if_solution_is_valid():
                 print(
                     f"Error the solution of {self.algorithm_name} with {improver} for problem {self.problem_instance.name} is not valid")
                 if return_value:
