@@ -59,7 +59,7 @@ class TSPSolver:
             print(f"###  solving with {self.algorithms} ####")
         start_time = t()
         self.solution = self.available_solvers[self.algorithms[0]](self.problem_instance)
-        if self.check_if_solution_is_valid():
+        if not self.check_if_solution_is_valid():
             print(f"Error the solution of {self.algorithm_name} for problem {self.problem_instance.name} is not valid")
             if return_value:
                 return False
