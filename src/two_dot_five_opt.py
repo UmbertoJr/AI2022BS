@@ -6,8 +6,8 @@ if "AI" in os.getcwd():
     from src.utils import compute_length
     from src.two_opt import swap2opt, gain
 else:
-    from AI2021BS.src.utils import compute_length
-    from AI2021BS.src.two_opt import swap2opt, gain
+    from AI2022BS.src.utils import compute_length
+    from AI2022BS.src.two_opt import swap2opt, gain
 
 
 def step2dot5opt(solution, matrix_dist, distance):

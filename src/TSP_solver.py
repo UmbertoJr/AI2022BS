@@ -9,10 +9,10 @@ if "AI" in os.getcwd():
     from src.simulated_annealing import sa
     from src.constructive_algorithms import random_method, nearest_neighbor, best_nearest_neighbor, multi_fragment_mf
 else:
-    from AI2021BS.src.two_opt import loop2opt
-    from AI2021BS.src.two_dot_five_opt import loop2dot5opt
-    from AI2021BS.src.simulated_annealing import sa
-    from AI2021BS.src.constructive_algorithms import random_method, nearest_neighbor, best_nearest_neighbor, multi_fragment_mf
+    from AI2022BS.src.two_opt import loop2opt
+    from AI2022BS.src.two_dot_five_opt import loop2dot5opt
+    from AI2022BS.src.simulated_annealing import sa
+    from AI2022BS.src.constructive_algorithms import random_method, nearest_neighbor, best_nearest_neighbor, multi_fragment_mf
 
 available_solvers = {"random": random_method,
                      "nearest_neighbors": nearest_neighbor,

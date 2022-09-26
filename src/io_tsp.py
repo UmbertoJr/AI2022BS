@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 if "AI" in os.getcwd():
     from src.utils import distance_euc
 else:
-    from AI2021BS.src.utils import distance_euc
+    from AI2022BS.src.utils import distance_euc
 
 
 class ProblemInstance:
@@ -37,7 +37,7 @@ class ProblemInstance:
             self.points[i, 2] = line_i[2]
 
         self.create_dist_matrix()
-        if self.file_name in ["AI2021BS/problems/eil76.tsp", "AI2021BS/problems/kroA100.tsp", "../problems/eil76.tsp",
+        if self.file_name in ["AI2022BS/problems/eil76.tsp", "AI2022BS/problems/kroA100.tsp", "../problems/eil76.tsp",
                               "../problems/kroA100.tsp"]:
             self.exist_opt = True
             file_object = open(self.file_name.replace(".tsp", ".opt.tour"))

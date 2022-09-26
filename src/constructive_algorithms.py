@@ -5,7 +5,7 @@ import numpy as np
 if "AI" in os.getcwd():
     from src.utils import compute_length
 else:
-    from AI2021BS.src.utils import compute_length
+    from AI2022BS.src.utils import compute_length
 
 
 def random_method(instance_):
